@@ -71,7 +71,7 @@ const powerResult = calculator.power(divideResult, minusResult);
 
 ```js
 function plus(a, b) {
-		console.log(a + b);
+    console.log(a + b);
 }
 ```
 
@@ -81,7 +81,7 @@ function plus(a, b) {
 
 ```js
 function plus(a, b) {
-		return a + b;
+    return a + b;
 }
 ```
 
@@ -91,9 +91,9 @@ function plus(a, b) {
 
 ```js
 function plus(a, b) {
-		console.log("hello");
-		return a + b;
-  	console.log("bye bye"); // 절대 작동하지 않는다!
+    console.log("hello");
+    return a + b;
+    console.log("bye bye"); // 절대 작동하지 않는다!
 }
 ```
 
