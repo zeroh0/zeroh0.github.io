@@ -18,7 +18,7 @@ last_modified_at: 2021-11-08
 
 
 
------- 
+---
 
 
 
@@ -93,13 +93,8 @@ function plus(a, b) {
 function plus(a, b) {
     console.log("hello");
     return a + b;
-    console.log("bye bye"); // 절대 작동하지 않는다!
+    console.log("bye bye") // 절대 작동하지 않는다!
 }
 ```
 
 return하는 순간 function이 종료되기 때문에 bye bye는 출력되지 않는다.
-
-<br>
-
-## Conditional (조건문)
-
