@@ -1,3 +1,19 @@
+---
+title: "Domain(도메인)"
+excerpt: "Domain(도메인)"
+
+categories:
+    - DB
+tags:
+    - [DB]
+
+toc: false
+toc_sticky: false
+
+date: 2021-11-17
+last_modified_at: 2021-12-04
+---
+
 ##### Domain(도메인)
 
 Domain이란 엔티티의 속성들이 가질 수 있는 값들의 집합으로, 관계형 이론에서 도메인은 실제로는 구현이 어렵기 때문에, 대부분의 DBMS에서 도메인이란 속성에 대응하는 컬럼에 대한 데이터 타입(Data Type)과 길이를 의미한다.
