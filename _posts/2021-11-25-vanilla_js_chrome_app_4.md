@@ -14,11 +14,10 @@ date: 2021-11-25
 last_modified_at: 2021-12-04
 ---
 
-# 바닐라 JS로 크롬 앱 만들기
   
----
+
   
-### document에서 항목들을 가지고와 가져온 항목들을 변경할 수 있다.
+## document에서 항목들을 가지고와 가져온 항목들을 변경할 수 있다.
 
 ```js
 const title = document.getElementById("title");
@@ -27,9 +26,9 @@ title.innerText = "Got you!";
 
 <br>
 
-## 자바스크립트에서 HTML 요소들을 가져올 수 있는 방법
+# 자바스크립트에서 HTML 요소들을 가져올 수 있는 방법
 
-### getElementBy...(Id, ClassName, TagName, Name)
+## getElementBy...(Id, ClassName, TagName, Name)
 
 ```js
 const title = document.getElementById("hello");
@@ -48,7 +47,7 @@ getElementByClassName, getElementByTagName, getElementByName 등으로
 
 <br>
 
-### querySelector, querySelectorAll
+## querySelector, querySelectorAll
   
 ```js
 const title = document.querySelector("#hello");
@@ -104,5 +103,9 @@ selector 안의 조건에 부합하는 모든 element를 가져다 준다.
 
 ```js
 const title = document.querySelector(".hello h2");
+console.log(title);
+```
+```
+null
 ```
 해당 요소가 존재하지 않으면 null 값이 나온다. 
