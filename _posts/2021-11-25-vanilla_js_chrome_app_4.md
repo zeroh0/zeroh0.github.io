@@ -148,15 +148,11 @@ title.style.color = "blue";
 ```
 요소들을 확인해서 자바스크립트에서 style을 변경해줄 수 있다.
 
-<br>
-
 ## addEventListener
 addEventListener는 말 그대로 event를 listen  
 javascript에 무슨 event를 listen하고 싶은 지 알려주어야 함  
 왜냐하면 모든 event에 대해서 알고싶은 것이 아니라  
 단 하나의 event만 알아보고 싶기 때문  
-
-<br>
 
 ###### click
 
@@ -171,7 +167,7 @@ title.addEventListener("click", handleTitleClick); // click event에 대해서 l
 addEventListener 두번째 인수로 handleTitleClick 전달  
 function에 ()가 들어가지 않는다!! -> 실행버튼을 누르길 원하지 않음
 
-##### 웹사이트에서 click event를 감지하는 방법
+###### 웹사이트에서 click event를 감지하는 방법
 
 querySeletor()를 통해 element를 찾아서 title에 할당
 addEventListen()를 추가 -> click event를 listen하고, click event가 발생하면,  
