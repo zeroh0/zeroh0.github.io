@@ -59,13 +59,13 @@ querySeletor는 #을 명시해주어야 한다.
 
 ```html
 <div class="hello">
-  <h1>Grab me1!</h1>
+    <h1>Grab me1!</h1>
 </div>
 <div class="hello">
-  <h1>Grab me2!</h1>
+    <h1>Grab me2!</h1>
 </div>
 <div class="hello">
-  <h1>Grab me3!</h1>
+    <h1>Grab me3!</h1>
 </div>
 ```
 
@@ -82,13 +82,13 @@ querySelector는 element를 css 방식으로 검색 할 수 있다.
 
 ```html
 <div class="hello">
-  <h1>Grab me1!</h1>
+    <h1>Grab me1!</h1>
 </div>
 <div class="hello">
-  <h1>Grab me2!</h1>
+    <h1>Grab me2!</h1>
 </div>
 <div class="hello">
-  <h1>Grab me3!</h1>
+    <h1>Grab me3!</h1>
 </div>
 ```
 
@@ -241,11 +241,11 @@ window.addEventListener("copy", handleWindowCopy); // copy에 반응
 ###### online, offline
 ```js
 function handleWindowOnline() {
-  alert("All Good");
+    alert("All Good");
 }
 
 function handleWindowOffline() {
-  alert("SOS no Wifi");
+    alert("SOS no Wifi");
 }
 
 // wifi가 연결되어 있을 때와 없을 때
@@ -264,3 +264,82 @@ addEventListener는 removeEventListener를 통해서 event listener를 제거할
 addEventListener를 더 선호한다고 한다.
 
 <br>
+
+###### index.html
+```html
+<div class="hello">
+    <h1 class="sexy-font">Grab me1!</h1>
+</div>
+```
+
+###### style.css
+```css
+h1 {
+    color: cornflowerblue;
+    transition: color .5s ease-in-out;
+}
+
+/* 이 class를 어떤 element에 지정해 주면, tomato 색을 가지게 된다. */
+.active { 
+    color: tomato;
+}
+
+.sexy-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+```
+
+###### app.js
+```js
+const h1 = document.querySelector(".hello h1"); // 1. element를 찾아라 
+
+function handleTitleClick() { // 3. 그 event에 반응해라
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor === "blue") {
+        newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
+}
+
+h1.addEventListener("click", handleTitleClick); // 2. event를 listen 해라
+```
+
+<br>
+
+```js
+/* h1에 active class 전달 */
+const h1 = document.querySelector(".hello h1");
+
+function handleTitleClick() {
+    const clickedClass = "active";
+    if(h1.classList.contains(clickedClass)) { // clickedClass가 h1의 classList에 포함되어 있는지
+        h1.classList.remove(clickedClass);
+    } else {
+        h1.classList.add(clickedClass);
+    }
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
+classList: class들의 목록으로 작업할 수 있게 허용해준다.    
+className: 이전의 class들은 상관하지 않고 교체해버린다.  
+
+<br>
+
+```js
+const h1 = document.querySelector(".hello h1");
+
+function handleTitleClick() {
+    h1.classList.toggle("active");
+}
+
+h1.addEventListener("click", handleTitleClick);
+```
+ 
+toggle: class name이 존재하는지 확인  
+만약 class name이 존재한다면 toggle은 class name을 제거  
+만약 class name이 존재하지 않는다면 toggle은 class name을 추가  
+
