@@ -85,7 +85,7 @@ gradlew, gradle.bat: gradle로 빌드할 때 사용
 [comment]: <> (gradle의 역할, 코드 분석 추가 포스팅 예정)
 
 ###### 생성한 hello-spring 프로젝트의 tree 구조
-![hello-spring_tree](_posts/images/hello-spring_tree.png)
+![hello-spring_tree](./images/hello-spring_tree.png)
 
 [comment]: <> (스프링 프로젝트의 tree 구조는 추가 포스팅 예정)
 
@@ -107,11 +107,11 @@ public class HelloSpringApplication {
 
 }
 ```
-![HelloSpringApplicationRun](images/HelloSpringApplicationRun.png)  
+![HelloSpringApplicationRun](./images/HelloSpringApplicationRun.png)  
 Tomcat started on port(s): 9090 (http) with context path ''  
 주소 창에 localhost:9090 입력  
 
-![localhost9090](images/localhost9090.png)  
+![localhost9090](./images/localhost9090.png)  
 해당 페이지가 보인다면 성공!
 
 <br>
@@ -126,13 +126,13 @@ server.port = 9090
 
 ##### invalid source release 11 에러 발생 시  
 `File -> Project Structure -> Project Settings -> Project` 탭의 `Project SDK`,`Project Language Level` 확인  
-![ProjectStructure_Project](images/ProjectStructure_Project.png)  
+![ProjectStructure_Project](./images/ProjectStructure_Project.png)  
 
 `File -> Project Structure -> Project Settings -> Modules` 탭의 `Language level` 확인  
-![ProjectStructure_Modules](images/ProjectStructure_Modules.png)  
+![ProjectStructure_Modules](./images/ProjectStructure_Modules.png)  
 
 `Preferences -> Build,Execution,Deployment -> Gradle` 탭의 `Gradle JVM` 확인  
-![Preference_Gradle](images/Preference_Gradle.png)  
+![Preference_Gradle](./images/Preference_Gradle.png)  
 
 `Preferences -> Build,Execution,Deployment -> Complier -> Java Complier` 탭의 `Project bytecode version` 확인  
-![Preference_JavaComplier](images/Preference_JavaComplier.png)  
+![Preference_JavaComplier](./images/Preference_JavaComplier.png)  
