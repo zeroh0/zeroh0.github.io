@@ -1,5 +1,5 @@
 ---
-title: "[spring] 프로젝트 생성"
+title: "hello-spring 프로젝트 생성"
 excerpt: "스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술"
 
 categories:
@@ -10,8 +10,8 @@ tags:
 toc: false
 toc_sticky: false
 
-date: 2021-12-07
-last_modified_at: 2021-12-07
+date: 2021-12-08
+last_modified_at: 2021-12-08
 ---
 
 ## 사전 준비물
@@ -85,7 +85,7 @@ gradlew, gradle.bat: gradle로 빌드할 때 사용
 [comment]: <> (gradle의 역할, 코드 분석 추가 포스팅 예정)
 
 ###### 생성한 hello-spring 프로젝트의 tree 구조
-![hello-spring_tree](images/hello-spring_tree.png)
+![hello-spring_tree](_posts/images/hello-spring_tree.png)
 
 [comment]: <> (스프링 프로젝트의 tree 구조는 추가 포스팅 예정)
 
