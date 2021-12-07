@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cca1bab0-4e72-4e1c-96fe-646b7306d88c" name="Changes" comment="바닐라 JS로 크롬 앱 만들기">
+    <list default="true" id="cca1bab0-4e72-4e1c-96fe-646b7306d88c" name="Changes" comment="custom">
       <change afterPath="$PROJECT_DIR$/_posts/2021-12-08-vanilla_js_chrome_app_7.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head/custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head/custom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minimal-mistakes/_archive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/minimal-mistakes/_archive.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1638695490910" duration="7938000" />
       <workItem from="1638810450314" duration="1762000" />
       <workItem from="1638837261777" duration="396000" />
-      <workItem from="1638855530284" duration="2905000" />
+      <workItem from="1638855530284" duration="3584000" />
     </task>
     <task id="LOCAL-00001" summary="post">
       <created>1638352719720</created>
@@ -151,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638812168006</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="custom">
+      <created>1638861601984</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638861601984</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +179,7 @@
     <MESSAGE value="DB" />
     <MESSAGE value="zeroh0.github.io" />
     <MESSAGE value="바닐라 JS로 크롬 앱 만들기" />
-    <option name="LAST_COMMIT_MESSAGE" value="바닐라 JS로 크롬 앱 만들기" />
+    <MESSAGE value="custom" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom" />
   </component>
 </project>
