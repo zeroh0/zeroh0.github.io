@@ -3,9 +3,9 @@ title: "hello-spring 프로젝트 생성"
 excerpt: "스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술"
 
 categories:
-    - java, spring
+    - java
 tags:
-    - [java], [spring]
+    - [java]
 
 toc: false
 toc_sticky: false
