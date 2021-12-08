@@ -14,7 +14,7 @@ date: 2021-12-08
 last_modified_at: 2021-12-09
 ---
 
-### [Welcome Page](https://docs.spring.io/spring-boot/docs/current/reference/html/web.html#web.servlet.spring-mvc.welcome-page) 생성    
+## [Welcome Page](https://docs.spring.io/spring-boot/docs/current/reference/html/web.html#web.servlet.spring-mvc.welcome-page) 생성    
 
 ###### main / resources / static / index.html
 ```html
