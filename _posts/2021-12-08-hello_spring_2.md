@@ -42,3 +42,8 @@ gradle은 의존 관계를 관리해준다.
   - assertj: 테스트 코드를 좀 더 편하게 작성하게 도와주는 라이브러리
   - spring-test: 스프링 통합 테스트 지원
 
+<br>
+
+![springboot](https://user-images.githubusercontent.com/89443479/145245289-890ebbe5-2259-489e-be9c-fadcc8503ce2.png)
+
+![test](https://user-images.githubusercontent.com/89443479/145245182-346c3a04-94b0-4aa1-bf31-6e2be986c2b6.png)
