@@ -1,5 +1,5 @@
 ---
-title: "hello-spring 01.프로젝트 생성"
+title: "[hello-spring] 01. 프로젝트 생성"
 excerpt: "스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술"
 
 categories:

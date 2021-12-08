@@ -1,5 +1,5 @@
 ---
-title: "hello-spring 02.라이브러리 살펴보기"
+title: "[hello-spring] 02. 라이브러리 살펴보기"
 excerpt: "스프링 입문 - 코드로 배우는 스프링 부트, 웹 MVC, DB 접근 기술"
 
 categories:
