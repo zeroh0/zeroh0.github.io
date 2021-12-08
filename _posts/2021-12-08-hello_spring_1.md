@@ -64,14 +64,14 @@ HTML을 만들어 주는 템플릿 엔진 <b>Thymeleaf</b>
 <b>gradle</b>  
 gradle과 관련되서 gradle를 사용하는 디렉토리
  
-<b>src - test, resources</b>    
+<b>src / test, resources</b>    
 main과 test라는 폴더가 따로 나누어져있다.  
  
-<b>src - main - java, resources</b>      
+<b>src / main / java, resources</b>      
 java 폴더에는 실제 패키지와 소스 파일들이 존재  
 resources 폴더에는 실제 자바 코드 파일을 제외한 html, xml, properties 등등 설정 파일이 존재  
 
-<b>src - test</b>  
+<b>src / test</b>  
 테스트와 관련된 소스들이 존재  
 test 코드라는 것이 개발 트렌드에 있어서는 정말 중요!  
 
