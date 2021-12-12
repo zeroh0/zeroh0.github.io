@@ -1,5 +1,5 @@
 ---
-title: "바닐라 JS로 크롬 앱 만들기_9차시"
+title: "바닐라 JS로 크롬 앱 만들기_9차시(완)"
 excerpt: "바닐라 JS로 크롬 앱 만들기"
 
 categories:
