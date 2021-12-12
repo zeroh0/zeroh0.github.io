@@ -122,15 +122,64 @@ function saveToDos() {
 }
 
 function handleToDoSubmit(event) {
-  event.preventDefault();
-  const newToDo = toDoInput.value;
-  toDoInput.value = ""; 
-  toDos.push(newToDo); // localStorage에 array를 저장할 수 없다. localStorage는 오직 텍스트만 저장할 수 있다.
-  paintToDo(newToDo);
-  saveToDos(); //
+    event.preventDefault();
+    const newToDo = toDoInput.value;
+    toDoInput.value = ""; 
+    toDos.push(newToDo); // localStorage에 array를 저장할 수 없다. localStorage는 오직 텍스트만 저장할 수 있다.
+    paintToDo(newToDo);
+    saveToDos(); //
 }
 ```
 localStorage에 array를 저장할 수 없다.  
 localStorage는 오직 텍스트만 저장할 수 있다.  
 그래서 `JSON.stringify()`를 사용  
 JSON.stringify() : javascript object나 array 또는 어떤 javascript 코드건 간에 그걸 string으로 만들어준다.
+
+### list 불러오기
+```js
+const TODOS_KEY = 'toDos'; //중복
+
+// application이 시작될 때 toDos array는 항상 비어있다
+let toDos = [];
+
+function sayHello(item) { 
+    // eventListener가 event를 제공해 주는 것처럼 javascript는 지금 처리되고 있는 item 또한 제공
+    console.log("this is the turn of", item);
+}
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+if(savedToDos !== null) {
+    const parseToDos = JSON.parse(savedToDos);
+    toDos = parseToDos; // toDos에 parseToDos를 넣어서 이전의 입력값들을 복원
+    parseToDos.forEach((item) => console.log("this is the turn of", item)); // forEach() : array에 있는 각각의 item에 대해서 실행해준다.
+    // parseToDos.forEach(sayHello);
+}
+
+```
+string을 array 으로 변환 : `JSON.parse()`  
+`forEach()` : array에 있는 각각의 item에 대해서 실행해준다.  
+
+값을 추가하고나서 새로고침을 한 뒤 값을 추가하면 화면 상에서는  
+값이 추가된 것 처럼 보이지만 local storage에는 새로운 값들로만 채워져있다.  
+그래서 입력 값들을 담는 toDos를 let으로 변경한 뒤 값이 있을 때는  
+local storage에 존재하는 값을 toDos 배열에 추가  
+
+### list 삭제
+```js
+function deleteToDo(event) {
+    const li = event.target.parentElement;
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); // 저장되있는 id와 li에 있는 id가 다를 때 남기기 위해, toDo.id는 number li.id는 string이기 때문에 형변환을 해준다.
+    li.remove();
+    saveToDos(); // 업데이트
+}
+```
+만약 array에서 뭔가를 삭제할 때 실제로 array에서 지우는 것이 아님.  
+진짜 일어나는 일은 지우고 싶은 item을 빼고 새 array를 만든다.  
+**item을 지우는 게 아니라 item을 제외하는 것**
+
+```js
+const toDoArr = [{text:"lalala"}, {text:"lololo"}];
+function sexyFilter(todo) { return todo.text !== "lololo"}
+toDoArr.filter(sexyFilter);
+```
+filter 함수는 반드시 true를 리턴해야 됨. 만약 새 array에서 object를 유지하고 싶으면
