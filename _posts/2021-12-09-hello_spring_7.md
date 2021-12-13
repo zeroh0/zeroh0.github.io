@@ -87,6 +87,8 @@ private로 선언된 필드는 외부에서 접근 불가
 4. 객체를 넘기면 몇 가지 조건이 있다. HttpMessageConverter가 동작 (기존에는 viewResolver) 단순 문자면 StringConverter가 동작, 객체면 JSONConverter가 기본으로 동작해서 JSON으로 변환해서 
 5. 요청한 웹 브라우저나 서버에 응답
 
+<br>
+
 - @ResponseBody 를 사용
   - HTTP의 BODY에 문자 내용을 직접 반환
   - viewResolver 대신에 HttpMessageConverter 가 동작
