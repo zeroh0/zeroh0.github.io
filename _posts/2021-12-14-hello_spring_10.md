@@ -84,6 +84,32 @@ class MemoryMemberRepositoryTest {
 
         assertThat(result.size()).isEqualTo(2);
     }
+
+    public void clearStore() {
+      store.clear();
+    }
 }
 ```
-@Test: 테스트로 실행할 수 있다.
+@Test: 테스트로 실행할 수 있다.  
+
+**테스트는 순서는 보장이 안된다. 모든 테스트는 순서랑 상관없이 메소드별로 따로 설계해야 된다.(순서에 의존적 x)**  
+테스트가 끝나면 데이터를 클리어해주어야 함!  
+```java
+@AfterEach
+public void afterEach() {
+    repository.clearStore();
+}
+```
+@AfterEach: 메소드가 실행이 끝날 때마다 어떤 동작을 하는 콜백 메소드  
+
+```java
+public void clearStore() {
+    store.clear();
+}
+```
+테스트가 실행이 되고 끝날 때마다 한 번씩 리포지토리(저장소)를 클리어  
+
+지금 진행한건 **메모리 리포지토리 개발 -> 테스트 작성**  
+
+**테스트 작성 -> 메모리 리포지토리 개발**    
+미리 검증할 수 있는 틀을 만들어두고 작품이 완성되면 검증 : `테스트 주도 개발 (TDD)`
