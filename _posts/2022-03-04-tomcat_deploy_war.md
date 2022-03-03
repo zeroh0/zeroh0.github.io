@@ -2,11 +2,6 @@
 title: "톰캣 서버 WAR 배포"
 excerpt: "포트포워딩을 활용해 WAR 배포"
 
-categories:
-    - server
-tags:
-    - [server]
-
 toc: false
 toc_sticky: false
 

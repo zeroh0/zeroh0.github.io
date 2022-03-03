@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cca1bab0-4e72-4e1c-96fe-646b7306d88c" name="Changes" comment="custom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2022-03-04-spring_server_setting.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-03-04-spring_server_setting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2022-03-04-tomcat_deploy_war.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2022-03-04-tomcat_deploy_war.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
       <workItem from="1638855530284" duration="4709000" />
       <workItem from="1639926487381" duration="239000" />
       <workItem from="1646321471047" duration="460000" />
-      <workItem from="1646322409481" duration="33000" />
+      <workItem from="1646322409481" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="post">
       <created>1638352719720</created>
