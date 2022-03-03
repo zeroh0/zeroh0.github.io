@@ -2,15 +2,24 @@
 title: "톰캣 서버 WAR 배포"
 excerpt: "포트포워딩을 활용해 WAR 배포"
 
+categories:
+    - server
+tags:
+    - [server]
+
 toc: false
 toc_sticky: false
 
-date: 2022-03-04
-last_modified_at: 2022-03-04
+date: "2022-03-04"
+last_modified_at: "2022-03-04"
 ---
+
+<br>
 
 스프링, 스프링부트을 통해서 만들어진 프로젝트는 보통 서버 구축을 AWS를 사용한다고 들었다.  
 하지만 시간이 부족하기에 과거에 포트포워딩 방식으로 JSP 프로젝트를 배포한적이 있어 **포트포워딩**을 활용해 프로젝트를 배포 계획
+
+<br>
 
 # 사전작업
 
