@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cca1bab0-4e72-4e1c-96fe-646b7306d88c" name="Changes" comment="custom">
-      <change afterPath="$PROJECT_DIR$/_posts/2022-03-04-GitLFS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/2022-03-06-what_is_spring.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,8 @@
       <workItem from="1639926487381" duration="239000" />
       <workItem from="1646321471047" duration="460000" />
       <workItem from="1646322409481" duration="1799000" />
-      <workItem from="1646393112313" duration="276000" />
+      <workItem from="1646393112313" duration="798000" />
+      <workItem from="1646566704529" duration="220000" />
     </task>
     <task id="LOCAL-00001" summary="post">
       <created>1638352719720</created>
