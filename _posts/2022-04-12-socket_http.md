@@ -18,6 +18,9 @@ last_modified_at: 2022-04-12
 
 
 # Socket 통신
+
+![socket-img](https://user-images.githubusercontent.com/89443479/162855544-d4dca8bc-3c16-496e-a197-e470174c3464.png)
+
 소켓이란 두 프로그램이 서로 데이터를 주고 받을 수 있는 양쪽(두 프로그램 모두)에 생성되는 통신 단자이다.
 
 소켓 통신이란 서버와 클라이언트 **양방향 연결이 이루어지는 통신**으로, 클라이언트도 서버로 요청을 보낼 수 있고 서버도 클라이언트로 요청을 보낼 수 있는 통신
@@ -37,6 +40,9 @@ last_modified_at: 2022-04-12
 
 
 # HTTP 통신
+
+![http-img](https://user-images.githubusercontent.com/89443479/162855499-01747f21-b9ab-4bad-802b-792502cdd596.png)
+
 **H**yper**T**ext **T**ransfer **P**rotocol의 약자로 HTML 파일을 전송하는 프로토콜이라는 의미를 가진다.  
 웹브라우저에서 통신이 일어나며, 초기에는 HTML 파일을 전송하려는 목적으로 만들어졌으나 현재는 JSON, Image 파일 등 또한 전송한다.  
 
