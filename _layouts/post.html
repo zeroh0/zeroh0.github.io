@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<!-- begin hero -->
+<section class="hero{% if page.video_embed %} hero-video{% endif %}">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div
+          class="hero__inner{% if page.image or page.video_embed %}{% else %} hero__without__media{% endif %}"
+        >
+          <div class="hero__left">
+            {% if page.tags.size >= 1 %}
+            <div class="post-tags">
+              {% for tag in page.tags %}
+              <a
+                href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}"
+                class="post-tag"
+                >{{ tag }}</a
+              >
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <h1 class="hero__title">{{ page.title | escape }}</h1>
+
+            {% if page.description %}
+            <p class="post-description">{{ page.description }}</p>
+            {% endif %}
+
+            <div class="post-meta">
+              <a href="{{site.baseurl}}/about/" class="post-author-image">
+                <img
+                  class="lazy"
+                  data-src="{{site.data.settings.author.author__avatar}}"
+                  alt="{{site.data.settings.author.author__name}}"
+                />
+              </a>
+
+              <div class="post-meta__bottom">
+                <a class="post-author" href="{{site.baseurl}}/about/"
+                  >{{site.data.settings.author.author__name}}</a
+                >
+                <time
+                  class="post-date"
+                  datetime="{{ page.date | date_to_xmlschema }}"
+                  >{% assign date_format = site.minima.date_format | default:
+                  "%-d %B, %Y" %}{{ page.date | date: date_format }}</time
+                >
+              </div>
+            </div>
+          </div>
+
+          {% if page.image or page.video_embed %}
+          <div class="hero__right">
+            {% if page.video_embed %}
+            <div class="post-video">
+              <div class="post-video__wrap">
+                <iframe
+                  src="{{ page.video_embed }}"
+                  loading="lazy"
+                  width="640"
+                  height="360"
+                  frameborder="0"
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            {% else %} {% if page.image %}
+            <div class="hero__image">
+              <img
+                class="hero__image__primary lazy"
+                data-src="{{site.baseurl}}{{page.image}}"
+                alt="{{page.title}}"
+              />
+            </div>
+            {% endif %} {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+<!-- begin post -->
+<div class="container animate">
+  <article class="post">
+    <div class="post__content">{{ content }}</div>
+
+    {% include post-navigation.html %} {% if
+    site.data.settings.disqus-identifier %} {% include disqus-comments.html %}
+    {% endif %}
+  </article>
+</div>
+<!-- end post -->
+
+{% include related-posts.html %}

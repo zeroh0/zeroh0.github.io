@@ -1,0 +1,133 @@
+/* Color Scheme */
+
+:root {
+  $brand-color: #3ec70b;
+  $white: #fff;
+  $light-blue: #f9f9fc;
+  $light-gray: #f0f0f0;
+  $lighten-gray: #ededf3;
+  $blue-gray: #4c526c;
+  $gray: #9e9e9e;
+  $dark: #17181e;
+
+  $hero-radial-gradient: -webkit-repeating-radial-gradient(
+    center center,
+    rgba($brand-color, 0.7),
+    rgba($brand-color, 0.7) 2px,
+    transparent 2px,
+    transparent 100%
+  );
+
+  $background-color: $light-blue;
+  $background-alt-color: $white;
+  $background-alt-color-2: $lighten-gray;
+
+  $text-color: $dark;
+  $text-alt-color: $blue-gray;
+
+  $heading-font-color: $dark;
+
+  $link-color: $dark;
+  $link-color-hover: $dark;
+
+  $button-color: $white;
+  $button-background-color: $brand-color;
+  $button-background-hover: darken($brand-color, 5%);
+
+  $border-color: $lighten-gray;
+  $border-alt-color: $lighten-gray;
+
+  $th-color: $lighten-gray;
+  $tr-color: $lighten-gray;
+
+  $syntax-highlighting-background: $lighten-gray;
+
+  --brand-color: #{$brand-color};
+  --white: #{$white};
+  --light-blue: #{$light-blue};
+  --light-gray: #{$light-gray};
+  --lighten-gray: #{$lighten-gray};
+  --blue-gray: #{$blue-gray};
+  --gray: #{$gray};
+  --dark: #{$dark};
+  --hero-radial-gradient: #{$hero-radial-gradient};
+  --background-color: #{$background-color};
+  --background-alt-color: #{$background-alt-color};
+  --background-alt-color-2: #{$background-alt-color-2};
+  --text-color: #{$text-color};
+  --text-alt-color: #{$text-alt-color};
+  --heading-font-color: #{$heading-font-color};
+  --link-color: #{$link-color};
+  --link-color-hover: #{$link-color-hover};
+  --button-color: #{$button-color};
+  --button-background-color: #{$button-background-color};
+  --button-background-hover: #{$button-background-hover};
+  --border-color: #{$border-color};
+  --border-alt-color: #{$border-alt-color};
+  --th-color: #{$th-color};
+  --tr-color: #{$tr-color};
+  --syntax-highlighting-background: #{$syntax-highlighting-background};
+}
+
+:root[dark] {
+  $brand-color: #3ec70b;
+  $white: #fff;
+  $light-gray: #fafafa;
+  $gray: #cdcdce;
+  $dark: #121212;
+
+  $hero-radial-gradient: -webkit-repeating-radial-gradient(
+    center center,
+    rgba($brand-color, 0.7),
+    rgba($brand-color, 0.7) 2px,
+    transparent 2px,
+    transparent 100%
+  );
+
+  $background-color: $dark;
+  $background-alt-color: #1a1a1a;
+  $background-alt-color-2: #242427;
+
+  $text-color: $gray;
+  $text-alt-color: $gray;
+
+  $heading-font-color: $light-gray;
+
+  $link-color: $light-gray;
+  $link-color-hover: $light-gray;
+
+  $button-color: $white;
+  $button-background-color: var(--brand-color);
+  $button-background-hover: darken($brand-color, 5%);
+
+  $border-color: #1a1a1a;
+  $border-alt-color: $dark;
+
+  $th-color: #121212;
+  $tr-color: #1a1a1a;
+
+  $syntax-highlighting-background: #1a1a1a;
+
+  --brand-color: #{$brand-color};
+  --white: #{$white};
+  --light-gray: #{$light-gray};
+  --gray: #{$gray};
+  --dark: #{$dark};
+  --hero-radial-gradient: #{$hero-radial-gradient};
+  --background-color: #{$background-color};
+  --background-alt-color: #{$background-alt-color};
+  --background-alt-color-2: #{$background-alt-color-2};
+  --text-color: #{$text-color};
+  --text-alt-color: #{$text-alt-color};
+  --heading-font-color: #{$heading-font-color};
+  --link-color: #{$link-color};
+  --link-color-hover: #{$link-color-hover};
+  --button-color: #{$button-color};
+  --button-background-color: #{$button-background-color};
+  --button-background-hover: #{$button-background-hover};
+  --border-color: #{$border-color};
+  --border-alt-color: #{$border-alt-color};
+  --th-color: #{$th-color};
+  --tr-color: #{$tr-color};
+  --syntax-highlighting-background: #{$syntax-highlighting-background};
+}

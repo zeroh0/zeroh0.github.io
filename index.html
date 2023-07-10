@@ -1,0 +1,29 @@
+---
+layout: default
+image: '/images/01.jpg'
+---
+
+{% include hero.html %}
+
+{% if page.url == "/" %}
+  {% include section-featured-posts.html %}
+{% endif %}
+
+<div class="container animate">
+  {% if page.url == "/" %}
+  <div class="section__head">
+    <h3 class="section__title">Previous posts</h3>
+  </div>
+  {% endif %}
+  <div class="row">
+    {% if site.posts.size > 0 %}
+      {% for post in paginator.posts %}
+        {% include article.html %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% include pagination.html %}
+
+{% include section-tags.html %}

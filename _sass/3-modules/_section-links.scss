@@ -1,0 +1,126 @@
+/* Section Links */
+.section-links {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.single-link {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 140px;
+  margin-bottom: 20px;
+  border-radius: 24px;
+  background-color: var(--background-alt-color);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+  transition: transform .3s ease;
+  will-change: transform;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px);
+
+    .single-link__title {
+      text-decoration-color: var(--heading-font-color);
+    }
+  }
+
+  .single-link__image {
+    position: relative;
+    min-height: 140px;
+    width: 100%;
+    max-width: 30%;
+    background: var(--background-color);
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      user-select: none;
+    }
+  }
+
+  .single-link__content {
+    width: 70%;
+    padding: 16px 32px;
+    font-size: 0;
+  }
+
+  .single-link__title {
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1.2px;
+    transition: all .3s;
+  }
+
+  .single-link__description {
+    display: -webkit-box;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-y: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: var(--text-alt-color);
+  }
+
+  .single-link__url {
+    display: inline-block;
+    max-width: 220px;
+    padding: 4px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: var(--background-alt-color-2);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      border-radius: 24px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border-radius: 40px;
+
+    .single-link__image {
+      max-width: 100%;
+      aspect-ratio: 3/2;
+      border-radius: 24px;
+      overflow: hidden;
+
+      @supports not (aspect-ratio: 3/2) {
+        padding-bottom: 56.25%;
+      }
+    }
+
+    .single-link__content {
+      width: 100%;
+      padding: 25px 10px 15px;
+
+      .single-link__title {
+        margin-bottom: 10px;
+      }
+
+      .single-link__url {
+        margin-top: 10px;
+      }
+    }
+  }
+}

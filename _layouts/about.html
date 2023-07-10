@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="author-profile">
+          {% if site.data.settings.author.author__avatar %}
+          <div class="author-profile__avatar">
+            <img
+              class="lazy"
+              data-src="{{ site.data.settings.author.author__avatar }}"
+              alt="{{ site.data.settings.author.author__name }}'s Picture"
+              class="author-avatar__img"
+            />
+          </div>
+          {% endif %} {% if site.data.settings.author.author__name %}
+          <h1 class="author-profile__name">
+            {{ site.data.settings.author.author__name }}
+          </h1>
+          {% endif %} {% if site.data.settings.author.author__bio %}
+          <p class="author-profile__desc">
+            {{ site.data.settings.author.author__bio }}
+          </p>
+          {% endif %} {% include social-links.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+<!-- begin page -->
+<div class="container animate">
+  <article class="page">
+    <div class="page__content">{{ content }}</div>
+  </article>
+</div>
+<!-- end page -->
+
+{% include section-links.html %}

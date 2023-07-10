@@ -1,0 +1,245 @@
+/* Hero */
+.hero {
+  padding: 60px 0 70px;
+  margin-bottom: 70px;
+  background-color: var(--background-alt-color);
+
+  &.hero-video {
+    .hero__inner {
+      flex-direction: column;
+    }
+
+    .hero__left {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto 40px;
+      padding-right: 0;
+    }
+
+    .hero__right {
+      width: 100%;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding: 60px 0;
+    margin-bottom: 60px;
+
+    &.hero-video {
+      .hero__left {
+        margin: 0 auto 20px;
+      }
+
+      .hero__right {
+        order: 0;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px 0;
+  }
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+
+  &.hero__without__media {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+}
+
+.hero__left,
+.hero__right {
+  width: 50%;
+  flex-grow: 1;
+
+  @media (max-width: $tablet) {
+    width: 100%;
+  }
+}
+
+.hero__left {
+  padding-right: 40px;
+
+  .hero__title,
+  .hero__job {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: var(--heading-font-color);
+
+    @media (max-width: 1130px) {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    @media (max-width: $desktop) {
+      font-size: 33px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 27px;
+    }
+  }
+
+  .hero__title {
+    margin-bottom: 10px;
+
+    span {
+      position: relative;
+      z-index: 1;
+      font-weight: 400;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        height: 38%;
+        opacity: 0.1;
+        background-color: var(--brand-color);
+      }
+    }
+  }
+
+  .hero__job {
+    margin-bottom: 20px;
+  }
+
+  .hero__description {
+    margin: 0;
+    font-size: 21px;
+    color: var(--text-alt-color);
+
+    @media (max-width: $desktop) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .hero__button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-right: 12px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: var(--heading-font-color);
+    outline: none;
+    cursor: pointer;
+    transition: $global-transition;
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--button-background-hover);
+    }
+
+    .hero__button__arrow {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      color: var(--white);
+      background: var(--brand-color);
+    }
+  }
+
+  @media (max-width: $tablet) {
+    padding-right: 0;
+  }
+}
+
+.hero__right {
+  position: relative;
+
+  .hero__image {
+    position: relative;
+    z-index: 10;
+    width: 370px;
+    aspect-ratio: 1/1.3;
+    margin: 0 auto;
+    user-select: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      background: var(--background-color);
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      border-radius: 24px;
+      object-fit: cover;
+      box-shadow: 10px 10px 0 var(--brand-color);
+      background: var(--background-color);
+    }
+
+    @supports not (aspect-ratio: 1/1.3) {
+      padding-bottom: 78%;
+    }
+  }
+
+  @media (max-width: 1130px) {
+    .hero__image {
+      width: 270px;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    .hero__image {
+      width: 230px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    order: -1;
+
+    .hero__image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      margin-bottom: 40px;
+
+      @supports not (aspect-ratio: 1/1) {
+        padding-bottom: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .hero__image {
+      margin-bottom: 30px;
+
+      img {
+        box-shadow: none;
+      }
+    }
+  }
+}

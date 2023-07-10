@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<!-- begin hero -->
+<section class="hero{% if page.video_embed %} hero-video{% endif %}">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner{% if page.image or page.video_embed %}{% else %} hero__without__media{% endif %}">
+          <div class="hero__left">
+            <h1 class="hero__title">{{ page.title | escape }}</h1>
+            {% if page.description %}
+            <p class="post-description">{{ page.description }}</p>
+            {% endif %}
+          </div>
+
+          {% if page.image or page.video_embed %}
+          <div class="hero__right">
+            {% if page.video_embed %}
+            <div class="post-video">
+              <div class="post-video__wrap">
+                <iframe src="{{ page.video_embed }}" loading="lazy" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+            </div>
+            {% else %}
+            {% if page.image %}
+            <div class="hero__image">
+              <img class="hero__image__primary lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
+            </div>
+            {% endif %}
+            {% endif %}
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+
+<!-- begin page -->
+<div class="container animate">
+
+  <article class="page">
+    <div class="page__content">
+      {{ content }}
+    </div>
+  </article>
+
+</div>
+<!-- end page -->
+
+{% if page.name == '404.html' %}
+<!-- begin previous posts -->
+<div class="previous-posts animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            <h3 class="section__title">Previous Posts</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+        {% include article.html %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<!-- end previous posts -->
+{% endif %}

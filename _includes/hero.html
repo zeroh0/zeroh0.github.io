@@ -1,0 +1,39 @@
+<!-- begin hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="hero__inner">
+
+          <div class="hero__left">
+            {% if site.data.settings.hero.hero__title %}
+            <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
+            {% endif %}
+            {% if site.data.settings.hero.hero__job %}
+            <h2 class="hero__job">{{ site.data.settings.hero.hero__job }}</h2>
+            {% endif %}
+            {% if site.data.settings.hero.hero__description %}
+            <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
+            {% endif %}
+            {% if site.data.settings.hero.hero__button__text %}
+            <a class="hero__button" href="{{ site.data.settings.hero.hero__button__link | relative_url }}">
+              <span class="hero__button__arrow"><i class="ion ion-ios-arrow-forward"></i></span>
+              <span>{{ site.data.settings.hero.hero__button__text }}</span>
+            </a>
+            {% endif %}
+          </div>
+
+          {% if site.data.settings.hero.hero__image %}
+          <div class="hero__right">
+            <div class="hero__image">
+              <img class="lazy" data-src="{{ site.data.settings.hero.hero__image }}" alt="{{ site.data.settings.author.name }}'s Picture">
+            </div>
+          </div>
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->

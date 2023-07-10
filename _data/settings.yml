@@ -1,0 +1,60 @@
+---
+#-------------------------------
+# Site Settings
+title: zeroh0
+logo: # You can add own logo. For example '/images/logo.png'.
+description: dev blog
+color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
+
+#-------------------------------
+# Navigation Settings
+menu__settings:
+  menu__items:
+    - title: "About"
+      url: "/about/"
+
+#-------------------------------
+# Author Settings
+author:
+  author__name: 장동호
+  # author__avatar: "/images/01-1.jpg"
+  author__bio: 안녕하세요
+
+#-------------------------------
+# Links Section Settings
+
+#-------------------------------
+# Hero Settings
+
+#-------------------------------
+# Gallery Footer Section
+
+#-------------------------------
+# Newsletter
+
+#-------------------------------
+# Social Icons Settings
+social:
+  - {
+      icon: "ion-logo-github",
+      name: "Github",
+      link: "https://github.com/zeroh0",
+    }
+
+# Example of adding a new link to the author section and footer: - {icon: "ion-logo-dribbble", name: "Dribbble", link: "https://dribbble.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: sadapple1900@gmail.com # Add your email for contant form
+
+# NOTE
+# Atega theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+#-------------------------------
+# Comment Section (Disqus)
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your GA Tracking Id

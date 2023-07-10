@@ -1,0 +1,17 @@
+/* Section Featured Posts */
+.featured-post {
+  margin-bottom: 40px;
+
+  .article__meta {
+    font-size: 12px;
+  }
+
+  .article__title {
+    margin-bottom: 0;
+    font-size: 19px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 30px;
+  }
+}
